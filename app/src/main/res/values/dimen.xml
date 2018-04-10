@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--两个item之间的距离-->
+    <dimen name="cMarginListItem">10dp</dimen>
+    <dimen name="cConnerRadiusMiddle">5dp</dimen>
+    <!--基准间隔，其他间隔整除此间隔-->
+    <dimen name="cBaseMargin">4dp</dimen>
+    <dimen name="cIconHeight">20dp</dimen>
+    <!--dialog与边框之间的距离-->
+    <dimen name="cMarginDialogScreen">32dp</dimen>
+
+</resources>

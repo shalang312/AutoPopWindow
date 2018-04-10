@@ -1,19 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<RelativeLayout
+    android:id="@+id/approvalBottom"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_centerVertical="true"
+    android:padding="15dp"
+    android:background="#F5F5F5"
     tools:context="com.example.jsonz.autopopwindow.MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        android:id="@+id/approvalReject"
+        style="@style/cTextWhiteText"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/c_bg_gray_round_btn"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:paddingLeft="@dimen/cMarginDialogScreen"
+        android:paddingRight="@dimen/cMarginDialogScreen"
+        android:text="拒绝"/>
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/approvalMore"
+        style="@style/cTextWhiteText"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/c_bg_primary_round_btn"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:paddingLeft="@dimen/cMarginDialogScreen"
+        android:paddingRight="@dimen/cMarginDialogScreen"
+        android:text="更多"/>
+
+    <TextView
+        android:id="@+id/approvalAgree"
+        style="@style/cTextWhiteText"
+        android:layout_width="match_parent"
+        android:layout_toLeftOf="@id/approvalMore"
+        android:layout_toRightOf="@id/approvalReject"
+        android:background="@drawable/c_bg_primary_round_btn"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:paddingLeft="@dimen/cMarginDialogScreen"
+        android:paddingRight="@dimen/cMarginDialogScreen"
+        android:text="同意"/>
+
+</RelativeLayout>

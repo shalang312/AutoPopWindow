@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?><!--使用时要注意padding，比如箭头朝下时，要给右边和下面设置padding，
+右边是一个阴影的宽度，下面是一个阴影加一个箭头的高度-->
+<com.example.jsonz.autopopwindow.ArrowLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/popRoot"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="12dp"
+    android:paddingRight="@dimen/cBaseMargin"
+    custom:cArrowPosition="right"
+    custom:cShadowThickness="@dimen/cBaseMargin">
+
+    <TextView
+        android:id="@+id/btnAddSignBefore"
+        style="@style/cTextWhiteText"
+        android:paddingBottom="@dimen/cMarginListItem"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:paddingTop="@dimen/cMarginListItem"
+        android:text="前置加签" />
+
+    <View style="@style/cDividerHorizontalBlack" />
+
+    <TextView
+        android:id="@+id/btnAddSignAfter"
+        style="@style/cTextWhiteText"
+        android:paddingBottom="@dimen/cMarginListItem"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:paddingTop="@dimen/cMarginListItem"
+        android:text="后置加签" />
+
+    <View style="@style/cDividerHorizontalBlack" />
+
+    <TextView
+        android:id="@+id/btnTransferSign"
+        style="@style/cTextWhiteText"
+        android:paddingBottom="@dimen/cMarginListItem"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:paddingTop="@dimen/cMarginListItem"
+        android:text="转签" />
+
+    <View style="@style/cDividerHorizontalBlack" />
+
+    <TextView
+        android:id="@+id/btnTransferRead"
+        style="@style/cTextWhiteText"
+        android:paddingBottom="@dimen/cMarginListItem"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:paddingTop="@dimen/cMarginListItem"
+        android:text="转阅" />
+</com.example.jsonz.autopopwindow.ArrowLinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--进度条-->
+    <declare-styleable name="cProgressBar">
+        <attr name="cBarBackColor" format="color" />
+        <attr name="cBarFirstColor" format="color" />
+        <attr name="cBarSecondColor" format="color" />
+    </declare-styleable>
+    <!--搜索框-->
+    <declare-styleable name="cSearchView">
+        <attr name="cSearchTextSize" format="dimension" />
+        <attr name="cSearchTextColor" format="color" />
+    </declare-styleable>
+    <!--通用点击view-->
+    <declare-styleable name="cCommTvClickView">
+        <attr name="cLeftText" format="string" />
+    </declare-styleable>
+    <!--圆形imageView-->
+    <declare-styleable name="cRoundImageView">
+        <attr name="cBorderThickness" format="dimension" />
+        <attr name="cBorderInsideColor" format="color" />
+        <attr name="cBorderOutsideColor" format="color"></attr>
+    </declare-styleable>
+    <!--带箭头的linearLayout-->
+    <declare-styleable name="cArrowLinearLayout">
+        <attr name="cArrowWidth" format="dimension" />
+        <attr name="cArrowHeight" format="dimension" />
+        <attr name="cArrowOffset" format="dimension" />
+        <attr name="cRadius" format="dimension" />
+        <attr name="cBackgroundColor" format="color" />
+        <attr name="cShadowColor" format="color" />
+        <attr name="cShadowThickness" format="dimension" />
+        <attr name="cArrowPosition">
+            <enum name="top" value="0" />
+            <enum name="bottom" value="1" />
+            <enum name="left" value="2" />
+            <enum name="right" value="3" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="cViewPagerIndicator">
+        <!-- Style of the circle indicator. -->
+        <attr name="cVpiCirclePageIndicatorStyle" format="reference" />
+        <!-- Style of the icon indicator's views. -->
+        <attr name="cVpiIconPageIndicatorStyle" format="reference" />
+        <!-- Style of the line indicator. -->
+        <attr name="cVpiLinePageIndicatorStyle" format="reference" />
+        <!-- Style of the title indicator. -->
+        <attr name="cVpiTitlePageIndicatorStyle" format="reference" />
+        <!-- Style of the tab indicator's tabs. -->
+        <attr name="cVpiTabPageIndicatorStyle" format="reference" />
+        <!-- Style of the underline indicator. -->
+        <attr name="cVpiUnderlinePageIndicatorStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="cCirclePageIndicator">
+        <!-- Whether or not the indicators should be centered. -->
+        <attr name="cCentered" format="boolean" />
+        <!-- Color of the filled circle that represents the current page. -->
+        <attr name="cFillColor" format="color" />
+        <!-- Color of the filled circles that represents pages. -->
+        <attr name="cPageColor" format="color" />
+        <!-- Orientation of the indicator. -->
+        <attr name="android:orientation" />
+        <!-- Radius of the circles. This is also the spacing between circles. -->
+        <attr name="cIRadius" format="dimension" />
+        <!-- Whether or not the selected indicator snaps to the circles. -->
+        <attr name="cSnap" format="boolean" />
+        <!-- Color of the open circles. -->
+        <attr name="cStrokeColor" format="color" />
+        <!-- Width of the stroke used to draw the circles. -->
+        <attr name="cStrokeWidth" format="dimension" />
+        <!-- View background -->
+        <attr name="android:background" />
+    </declare-styleable>
+
+</resources>
